@@ -6,9 +6,9 @@ Dodawanie
 Odejmowanie
 Mnożenie
 Dzielenie (z zabezpieczeniem uniemożliwiającym dzielenie przez 0)
-Potęgowanie (całkowity, nieujemny wykładnik)
+Potęgowanie (dla całkowitych nieujemnych wykładników)
 Średnia arytmetyczna z podanej serii liczb (pomija liczby < 0)
-Pierwiastkowanie (tylko dla liczb ≥ 0)
+Pierwiastkowanie (tylko dla liczb większych od zera)
 
 Zostały w nim użyte funkcje: 
 if / else if / else
