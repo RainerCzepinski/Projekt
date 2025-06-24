@@ -12,7 +12,7 @@ class Program
         Console.WriteLine("3. Mnożenie");
         Console.WriteLine("4. Dzielenie");
         Console.WriteLine("5. Potęgowanie");
-        Console.WriteLine("6. Średnia z liczb");
+        Console.WriteLine("6. Średnia ");
         Console.WriteLine("7. Pierwiastkowanie");
         Console.Write("Wybierz opcję: ");
 
@@ -44,7 +44,7 @@ class Program
         }
         else if (opcja == 4)
         {
-            Console.Write("Podaj dzielną: ");
+            Console.Write("Podaj liczbę: ");
             double a = Convert.ToDouble(Console.ReadLine());
             Console.Write("Podaj dzielnik: ");
             double b = Convert.ToDouble(Console.ReadLine());
@@ -60,20 +60,20 @@ class Program
         else if (opcja == 5)
         {
             Console.Write("Podaj podstawę: ");
-            int podstawa = Convert.ToInt32(Console.ReadLine());
+            double a = Convert.ToDouble(Console.ReadLine());
             Console.Write("Podaj wykładnik: ");
-            int wykladnik = Convert.ToInt32(Console.ReadLine());
+            double b = Convert.ToDouble(Console.ReadLine());
 
-            if (wykladnik < 0)
+            if (b < 0)
             {
                 Console.WriteLine("Wykładnik nie może być ujemny");
                 goto Start;
             }
 
-            int wynik = 1;
-            for (int i = 0; i < wykladnik; i++)
+            double wynik = 1;
+            for (int i = 0; i < b; i++)
             {
-                wynik *= podstawa;
+                wynik *= a;
             }
 
             Console.WriteLine("Wynik potęgowania: " + wynik);
@@ -81,19 +81,19 @@ class Program
         else if (opcja == 6)
         {
             Console.Write("Ile liczb chcesz podać: ");
-            int n = Convert.ToInt32(Console.ReadLine());
+            int a = Convert.ToInt32(Console.ReadLine());
 
-            if (n <= 0)
+            if (a <= 0)
             {
-                Console.WriteLine("Liczba elementów musi być większa od zera");
+                Console.WriteLine("Ilość liczb musi być większa od zera");
                 goto Start;
             }
 
-            double[] tab = new double[n];
+            double[] tab = new double[a];
             int i = 0;
             double suma = 0;
 
-            while (i < n)
+            while (i < a)
             {
                 Console.Write($"Podaj liczbę {i + 1}: ");
                 double l = Convert.ToDouble(Console.ReadLine());
@@ -110,21 +110,21 @@ class Program
                 i++;
             }
 
-            Console.WriteLine("Średnia: " + (suma / n));
+            Console.WriteLine("Średnia: " + (suma / a));
         }
         else if (opcja == 7)
         {
-            Console.Write("Podaj liczbę do pierwiastkowania: ");
-            double liczba = Convert.ToDouble(Console.ReadLine());
+            Console.Write("Podaj liczbę: ");
+            double a = Convert.ToDouble(Console.ReadLine());
 
-            if (liczba < 0)
+            if (a < 0)
             {
                 Console.WriteLine("Nie można pierwiastkować liczby ujemnej.");
                 goto Start;
             }
 
-            double wynik = Math.Sqrt(liczba);
-            Console.WriteLine("Pierwiastek z " + liczba + " to: " + wynik);
+            double wynik = Math.Sqrt(a);
+            Console.WriteLine("Pierwiastek z " + a + " to: " + wynik);
         }
         else
         {
