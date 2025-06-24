@@ -96,17 +96,17 @@ class Program
             while (i < a)
             {
                 Console.Write($"Podaj liczbę {i + 1}: ");
-                double l = Convert.ToDouble(Console.ReadLine());
+                double b = Convert.ToDouble(Console.ReadLine());
 
-                if (l < 0)
+                if (b < 0)
                 {
                     Console.WriteLine("Pominięto liczbę ujemną");
                     i++;
                     continue;
                 }
 
-                tab[i] = l;
-                suma += l;
+                tab[i] = b;
+                suma += b;
                 i++;
             }
 
