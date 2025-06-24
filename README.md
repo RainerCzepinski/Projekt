@@ -7,7 +7,7 @@ Odejmowanie
 Mnożenie
 Dzielenie (z zabezpieczeniem uniemożliwiającym dzielenie przez 0)
 Potęgowanie (dla całkowitych nieujemnych wykładników)
-Średnia arytmetyczna z podanej serii liczb (pomija liczby < 0)
+Średnia arytmetyczna z podanej serii liczb (pomija liczby mniejsze od zera)
 Pierwiastkowanie (tylko dla liczb większych od zera)
 
 Zostały w nim użyte funkcje: 
